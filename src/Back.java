@@ -48,9 +48,11 @@ public class Back extends JPanel implements ActionListener  {
 
     static JCheckBox china = new JCheckBox("China");
 
-    static JCheckBox russia = new JCheckBox("Rus");
+    static JCheckBox russia = new JCheckBox("funline");
 
     static JCheckBox russia_off = new JCheckBox("ru_off");
+
+    static JCheckBox comeback = new JCheckBox("comeback");
 
 
     static String[] items = {
@@ -271,6 +273,7 @@ public class Back extends JPanel implements ActionListener  {
                 start.setBackground(Color.red);
                 russia.setSelected(false);
                 russia_off.setSelected(false);
+                comeback.setSelected(false);
             try {
                 Graphic.loadImages_CN();
                 Robot.CHINA = true;
@@ -293,6 +296,7 @@ public class Back extends JPanel implements ActionListener  {
             start.setBackground(Color.BLUE);
             china.setSelected(false);
             russia_off.setSelected(false);
+            comeback.setSelected(false);
             try {
                 Graphic.loadImages_RUS();
                 Robot.CHINA = false;
@@ -314,6 +318,7 @@ public class Back extends JPanel implements ActionListener  {
             start.setBackground(Color.CYAN);
             china.setSelected(false);
             russia.setSelected(false);
+            comeback.setSelected(false);
             try {
                 Robot.inc_x = 20;
                 Robot.inc_y = 10;
@@ -327,6 +332,31 @@ public class Back extends JPanel implements ActionListener  {
 
         });
         this.add(russia_off);
+
+
+        comeback.setBackground(Color.LIGHT_GRAY);
+        comeback.setFont(new Font("Dialog",Font.PLAIN,20));
+        comeback.setLocation(510,180);
+        comeback.setSize(80,50);
+        comeback.addActionListener(e -> {
+
+            start.setBackground(Color.orange);
+            china.setSelected(false);
+            russia.setSelected(false);
+            russia_off.setSelected(false);
+            try {
+                Robot.inc_x = 20;
+                Robot.inc_y = 10;
+                Robot.CHINA = true;
+                Graphic.loadImages_comeback_pw();
+
+                System.out.println("comeback images loaded");
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+
+        });
+        this.add(comeback);
 
 
         podzemka.setBackground(Color.GREEN);

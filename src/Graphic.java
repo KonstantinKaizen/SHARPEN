@@ -74,7 +74,7 @@ public  class Graphic {
 
 
 
-        System.out.println("rus images");
+
 
 
     }
@@ -101,7 +101,32 @@ public  class Graphic {
 
 
 
-        System.out.println("rus off images");
+
+    }
+
+    public static void loadImages_comeback_pw() throws IOException{
+
+
+        inventory_window = ImageIO.read(new File("COMEBACK\\inventory_window.png"));
+
+        sharp_window = ImageIO.read(new File("COMEBACK\\sharp_window.png"));
+
+        upgrade_button = ImageIO.read(new File("COMEBACK\\upgrade_button.png"));
+
+        zero = ImageIO.read(new File("COMEBACK\\+0.png"));
+        one = ImageIO.read(new File("COMEBACK\\+1.png"));
+        two = ImageIO.read(new File("COMEBACK\\+2.png"));
+        three = ImageIO.read(new File("COMEBACK\\+3.png"));
+        four = ImageIO.read(new File("COMEBACK\\+4.png"));
+        five = ImageIO.read(new File("COMEBACK\\+5.png"));
+        //six = ImageIO.read(new File("COMEBACK\\+4.png"));
+        //seven = ImageIO.read(new File("COMEBACK\\+4.png"));
+        //eight = ImageIO.read(new File("COMEBACK\\+4.png"));
+        //nine = ImageIO.read(new File("COMEBACK\\+4.png"));
+
+
+
+
     }
 
 

@@ -44,7 +44,7 @@ public class Items {
     public static Items item_5 = new Items(-98+152,197,0);
     public static Items item_6 = new Items(-98+190,197,0);
     public static Items item_7 = new Items(-98+228,197,0);
-    public static Items item_8 = new Items(-98+266,197,0);
+    public static Items item_8 = new Items(-98+266-10,197,0);
     //вторая строка
     public static Items item_9 = new Items(-98,197+38,0);
     public static Items item_10 = new Items(-98+38,197+38,0);
@@ -53,7 +53,7 @@ public class Items {
     public static Items item_13 = new Items(-98+152,197+38,0);
     public static Items item_14 = new Items(-98+190,197+38,0);
     public static Items item_15 = new Items(-98+228,197+38,0);
-    public static Items item_16 = new Items(-98+266,197+38,0);
+    public static Items item_16 = new Items(-98+266-10,197+38,0);
 
     // 3ряд
 
@@ -64,7 +64,7 @@ public class Items {
     public static Items item_21 = new Items(-98+152,197+76,0);
     public static Items item_22 = new Items(-98+190,197+76,0);
     public static Items item_23 = new Items(-98+228,197+76,0);
-    public static Items item_24 = new Items(-98+266,197+76,0);
+    public static Items item_24 = new Items(-98+266-10,197+76,0);
 
 
 
