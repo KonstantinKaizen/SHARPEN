@@ -63,7 +63,7 @@ public class Robot {
 
 
     public static void equpPodzemka() throws InterruptedException {
-        robot.mouseMove(Sharp_Util.inventory_x+94, Sharp_Util.inventory_y+311);
+        robot.mouseMove(Sharp_Util.inventory_x+94-5, Sharp_Util.inventory_y+311-5);
         Thread.sleep(300);
         robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
         Thread.sleep(100);
@@ -71,7 +71,7 @@ public class Robot {
     }
 
     public static void equpNebeska() throws InterruptedException {
-        robot.mouseMove(Sharp_Util.inventory_x+133, Sharp_Util.inventory_y+312);
+        robot.mouseMove(Sharp_Util.inventory_x+133-5, Sharp_Util.inventory_y+312-5);
         Thread.sleep(300);
         robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
         Thread.sleep(100);
